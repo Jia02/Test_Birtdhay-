@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const giftImg = document.getElementById("gift-img");
+          const popupImg = document.getElementById("popup-img");
+          const closeBtn = document.getElementById("close-btn");
+
+          giftImg.addEventListener("click", function() {
+            popupImg.style.display = "block";
+          });
+
+          closeBtn.addEventListener("click", function() {
+            popupImg.style.display = "none";
+          });
+        });
+
+    </script>
+    
+    <style>
+      body {
+        background-image: url('https://st.depositphotos.com/1518767/2563/v/600/depositphotos_25631851-stock-video-colourful-happy-birthday-candles-being.jpg');
+        background-size: contain;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px #888;
+        display: inline-block;
+      }
+
+      h1 {
+        font-size: 82px;
+        font-family: 'Playfair Display', serif;
+        color: #6495ED;
+        text-shadow: 1px 2px 5px #fff;
+        margin-bottom: 30px;
+      }
+
+      h2{
+        font-size: 64px;
+        font-family: "SimSun", "Microsoft YaHei", "FangSong", sans-serif;
+        color: #87CEEB;
+        text-shadow: -1px 4px 2px #333;
+        margin-bottom: 30px;
+      }
+
+      .gift-container {
+        position: relative;
+        height: 350px;
+        overflow: hidden;
+        padding-top: 80px;
+      }
+
+      .gift {
+        width: 180px;
+        height: 130px;
+        border-radius: 50%;
+        background-image: url('https://i.pinimg.com/originals/a7/57/d2/a757d203a381c5628bddfa55af3094b1.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        animation: gift-jump 1s ease-in-out infinite alternate;
+        transform-origin: bottom center;
+        cursor: pointer;
+        top: 30px;
+      }
+
+      @keyframes gift-jump {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .popup-img {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        height: 400px;
+        /* overflow: visible; */
+      }
+
+      .popup-img img{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+      }
+
+      .popup-img .close-btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #fff;
+        background-color: #000;
+        padding: 5px 10px;
+        border-radius: 50%;
+      }
+
+
+      p {
+        font-size: 20px;
+        color: #333;
+        margin-top: 30px;
+      }
+      .fade-in{
+        animation: fadeIn 5s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .balloon {
+        position: fixed;
+        top: 50;
+        left: 0;
+        width: 200px;
+        height: 100px;
+        animation: float 5s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Happy 21st Birthday!</h1>
+      <h2>！！！生日快乐呀！！！</h2>
+
+      <div class="fade-in">
+        <img src="https://media.tenor.com/bWfhkcJ-j_IAAAAM/happy-birthday.gif">
+      </dv>
+
+      <p>
+        佩，21岁生日快乐啊啊啊啊！🎊<br>
+        哇哇哇，不知不觉你已经21岁了， 正式成为大人了！ o(*^▽^*)┛o<br>
+        虽然可能你觉得差别不大，但是在思想方面肯定有变得成熟, 然后不可避免的就是责任变大了。<br>
+        但是成长的过程中也不必焦虑哈，思考后就跟着你的感觉走，该做什么就去做什么，不必瞎担心哈。（虽然你可能没有这个烦恼 哈哈哈  (。・ω・。)<br>
+        虽然可能有点肉麻哈哈哈哈，但是真的很感谢你在我不开心的时候给予的鼓励还有开导，给了我很大的安慰， 真心的！<br>
+        发现你真的有在好好长大，所以很欣慰，嘿嘿。(❁´◡`❁)<br>
+        然后我也很抱歉，感觉没有准备什么惊喜或特别的礼物给你叻 T^T 等你上来再请你吃吧，嘿嘿 (●ˇ∀ˇ●)<br>
+        但是我想提早恭喜你毕业快乐🎉，也祝你：钱途无量，狂吃不胖，躺平暴富，平安顺利，头发越长越多，开开心心没烦恼，然后所有的梦想都能实现！\(@^0^@)/<br>
+      </p>
+
+      <p>
+        Happy birthday to Pei Pei✨ who always knows how to turn a bad day into a good one. <br>
+        May your birthday be filled with all the laughter and craziness you bring into our lives. <br>
+        Wishing you a day filled with happiness and a year filled with joy. 💖
+      </p>
+
+      <div style="position: relative; height: 110px; margin-bottom: 50px;">
+        <p style="position: absolute; bottom:0; right:0;">
+          From, <br>
+          Ah Jia (´▽｀)<br>
+          - year 2023 -
+        </p>
+      </div>
+
+      <div>
+        <img src="https://media.tenor.com/gr1UIQ9pNjYAAAAM/musicaljourney84-funny.gif">
+      </div>
+
+      <div class="gift-container">
+
+        <div class="gift" id="gift-img"></div>
+        <p>CLICK ME!</p>
+        <div class="popup-img" id="popup-img">
+          <img src="https://qnm.hunliji.com/o_1dshhe47u1v981un919iv1j2889i7.jpg?imageView2/2/w/1080">
+          <button class="close-btn" id="close-btn">X</button>
+        </div>
+
+      </div>
+      
+      <p>p.s. 感觉这个做得有点丑诶。。不要嫌弃哈 (ಥ _ ಥ)</p>
+      
+      <div class="balloon">
+        <img src="https://www.freeiconspng.com/uploads/heart-balloon-png-32.png" alt="balloon">
+      </div>
+
+
+      
+    </div>
+    
+  </body>
+</html>
